@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Evolución del Reclutamiento - Línea del Tiempo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
@@ -10,8 +10,25 @@
 <body>
     <div class="timeline-container">
         <header class="header">
-            <h1>🚀 Evolución del Reclutamiento</h1>
-            <p>De los métodos tradicionales a la inteligencia artificial</p>
+            <div class="header-content">
+                <div class="header-icon">💼</div>
+                <h1>Evolución del Reclutamiento</h1>
+                <p class="subtitle">Un viaje desde los métodos tradicionales hasta la inteligencia artificial</p>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">75+</span>
+                        <span class="stat-label">Años de Evolución</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Generaciones</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Innovación</span>
+                    </div>
+                </div>
+            </div>
         </header>
 
         <div class="timeline">
@@ -19,405 +36,416 @@
 
             <!-- Reclutamiento 1.0 -->
             <div class="timeline-item reclutamiento-1">
-                <div class="timeline-dot">📰</div>
+                <div class="timeline-dot">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                    </svg>
+                </div>
                 <div class="timeline-content">
-                    <div class="stage-image">
-                        <svg width="100%" height="120" viewBox="0 0 400 120" style="margin-bottom: 20px;">
-                            <!-- Periódico -->
-                            <rect x="50" y="20" width="80" height="60" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
-                            <line x1="55" y1="30" x2="125" y2="30" stroke="#333" stroke-width="2"/>
-                            <line x1="55" y1="40" x2="125" y2="40" stroke="#333" stroke-width="1"/>
-                            <line x1="55" y1="50" x2="125" y2="50" stroke="#333" stroke-width="1"/>
-                            <line x1="55" y1="60" x2="125" y2="60" stroke="#333" stroke-width="1"/>
-                            <text x="90" y="75" text-anchor="middle" font-size="10" fill="#333">EMPLEOS</text>
-                            
-                            <!-- Persona leyendo -->
-                            <circle cx="200" cy="35" r="15" fill="#ffdbac"/>
-                            <rect x="190" y="50" width="20" height="30" fill="#4a90e2"/>
-                            <rect x="185" y="55" width="30" height="20" fill="#f5f5f5" stroke="#333"/>
-                            
-                            <!-- Oficina -->
-                            <rect x="280" y="30" width="70" height="50" fill="#e8e8e8" stroke="#333" stroke-width="2"/>
-                            <rect x="290" y="40" width="15" height="15" fill="#87ceeb"/>
-                            <rect x="315" y="40" width="15" height="15" fill="#87ceeb"/>
-                            <rect x="320" y="65" width="20" height="15" fill="#8b4513"/>
-                            <text x="315" y="95" text-anchor="middle" font-size="8" fill="#333">EMPRESA</text>
-                        </svg>
+                    <div class="stage-header">
+                        <div class="stage-image-container">
+                            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=800&h=400&fit=crop" alt="Periódicos vintage" class="stage-photo" onerror="this.style.display='none'">
+                            <div class="stage-overlay"></div>
+                        </div>
+                        <div class="stage-badge">
+                            <span class="version-tag">v1.0</span>
+                            <h2 class="stage-title">Reclutamiento Tradicional</h2>
+                            <p class="period">1950 - 1990</p>
+                            <p class="context">Era Industrial y Post-Guerra</p>
+                        </div>
                     </div>
                     
-                    <div class="version">Reclutamiento 1.0</div>
-                    <div class="period">1950 - 1990</div>
-                    <div class="context">Era Industrial y Post-Guerra</div>
-                    <div class="stage-title">
-                        📰 Reclutamiento Tradicional
-                    </div>
-                    
-                    <div class="characteristics">
-                        <h4>🎯 Características Principales:</h4>
-                        <ul>
-                            <li>Proceso manual y presencial (duración promedio: 4-8 semanas)</li>
-                            <li>Comunicación unidireccional por correo postal</li>
-                            <li>Enfoque en estabilidad laboral y lealtad empresarial</li>
-                            <li>Verificación manual de referencias telefónicas</li>
-                            <li>Alcance limitado a mercados locales/regionales</li>
+                    <div class="content-section">
+                        <div class="icon-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <h4>Características Principales</h4>
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="bullet">→</span> Proceso manual y presencial (duración: 4-8 semanas)</li>
+                            <li><span class="bullet">→</span> Comunicación unidireccional por correo postal</li>
+                            <li><span class="bullet">→</span> Enfoque en estabilidad laboral y lealtad empresarial</li>
+                            <li><span class="bullet">→</span> Verificación manual de referencias telefónicas</li>
+                            <li><span class="bullet">→</span> Alcance limitado a mercados locales/regionales</li>
                         </ul>
                     </div>
 
-                    <div class="tools">
-                        <h4>🛠️ Herramientas y Medios:</h4>
+                    <div class="content-section">
+                        <div class="icon-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                            </svg>
+                            <h4>Herramientas y Medios</h4>
+                        </div>
                         <div class="tool-tags">
-                            <span class="tool-tag">Periódicos (90% de ofertas)</span>
-                            <span class="tool-tag">Radio comercial</span>
-                            <span class="tool-tag">Carteles en fábricas</span>
-                            <span class="tool-tag">Referencias personales</span>
-                            <span class="tool-tag">Entrevistas cara a cara</span>
+                            <span class="tool-tag">📰 Periódicos (90% ofertas)</span>
+                            <span class="tool-tag">📻 Radio comercial</span>
+                            <span class="tool-tag">📋 Carteles en fábricas</span>
+                            <span class="tool-tag">🤝 Referencias personales</span>
+                            <span class="tool-tag">👔 Entrevistas presenciales</span>
                         </div>
                     </div>
 
-                    <button class="expand-btn" onclick="toggleDetails(this)">Ver más detalles</button>
+                    <button class="expand-btn" onclick="toggleDetails(this)">
+                        <span>Ver más detalles</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="btn-icon">
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                        </svg>
+                    </button>
+                    
                     <div class="detailed-info">
                         <div class="detailed-content">
-                            <h4>📋 Datos Históricos Verídicos:</h4>
-                            <p><strong>Contexto:</strong> En los años 50-60, el 85% de las ofertas laborales se publicaban en periódicos. El New York Times tenía una sección de empleos de hasta 50 páginas los domingos.</p>
-                            <p><strong>Proceso típico:</strong> Los candidatos enviaban CVs por correo postal, esperaban 2-3 semanas por respuesta, y pasaban por 3-4 entrevistas presenciales. El 70% de las contrataciones se basaban en referencias personales.</p>
-                            <p><strong>Dato curioso:</strong> En 1960, el costo promedio de publicar un anuncio de empleo en un periódico nacional era de $200 (equivalente a $1,800 actuales).</p>
+                            <div class="insight-card">
+                                <h4>📊 Contexto Histórico</h4>
+                                <p>En los años 50-60, el <strong>85%</strong> de las ofertas laborales se publicaban en periódicos. El New York Times tenía una sección de empleos de hasta <strong>50 páginas</strong> los domingos.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4>⏱️ Proceso Típico</h4>
+                                <p>Los candidatos enviaban CVs por correo postal, esperaban <strong>2-3 semanas</strong> por respuesta, y pasaban por 3-4 entrevistas presenciales. El <strong>70%</strong> de las contrataciones se basaban en referencias personales.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4>💡 Dato Curioso</h4>
+                                <p>En 1960, el costo promedio de publicar un anuncio de empleo en un periódico nacional era de <strong>$200</strong> (equivalente a $1,800 actuales).</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="evolution-arrow">➡️</div>
+                <div class="evolution-arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                    </svg>
+                </div>
             </div>
 
             <!-- Reclutamiento 2.0 -->
             <div class="timeline-item reclutamiento-2">
-                <div class="timeline-dot">💻</div>
+                <div class="timeline-dot">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"/>
+                    </svg>
+                </div>
                 <div class="timeline-content">
-                    <div class="stage-image">
-                        <svg width="100%" height="120" viewBox="0 0 400 120" style="margin-bottom: 20px;">
-                            <!-- Computadora -->
-                            <rect x="80" y="40" width="60" height="40" fill="#e8e8e8" stroke="#333" stroke-width="2"/>
-                            <rect x="85" y="45" width="50" height="30" fill="#000"/>
-                            <rect x="90" y="50" width="40" height="20" fill="#00ff00"/>
-                            <text x="110" y="62" text-anchor="middle" font-size="8" fill="#000">CV.DOC</text>
-                            <rect x="95" y="80" width="30" height="5" fill="#ccc"/>
-                            
-                            <!-- Fax -->
-                            <rect x="180" y="35" width="40" height="30" fill="#f0f0f0" stroke="#333" stroke-width="2"/>
-                            <rect x="185" y="40" width="30" height="3" fill="#333"/>
-                            <rect x="185" y="45" width="30" height="3" fill="#333"/>
-                            <rect x="185" y="50" width="30" height="3" fill="#333"/>
-                            <text x="200" y="75" text-anchor="middle" font-size="8" fill="#333">FAX</text>
-                            
-                            <!-- Email -->
-                            <rect x="260" y="30" width="50" height="35" fill="#4a90e2" stroke="#333" stroke-width="2"/>
-                            <polygon points="260,30 285,45 310,30" fill="#fff"/>
-                            <text x="285" y="75" text-anchor="middle" font-size="8" fill="#333">EMAIL</text>
-                            
-                            <!-- Base de datos -->
-                            <rect x="330" y="25" width="30" height="40" fill="#ff6b6b" stroke="#333" stroke-width="2"/>
-                            <line x1="335" y1="35" x2="355" y2="35" stroke="#fff" stroke-width="2"/>
-                            <line x1="335" y1="45" x2="355" y2="45" stroke="#fff" stroke-width="2"/>
-                            <line x1="335" y1="55" x2="355" y2="55" stroke="#fff" stroke-width="2"/>
-                            <text x="345" y="75" text-anchor="middle" font-size="8" fill="#333">DB</text>
-                        </svg>
+                    <div class="stage-header">
+                        <div class="stage-image-container">
+                            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&h=400&fit=crop" alt="Computadora retro" class="stage-photo" onerror="this.style.display='none'">
+                            <div class="stage-overlay"></div>
+                        </div>
+                        <div class="stage-badge">
+                            <span class="version-tag">v2.0</span>
+                            <h2 class="stage-title">Digitalización Inicial</h2>
+                            <p class="period">1990 - 2000</p>
+                            <p class="context">Revolución Digital Temprana</p>
+                        </div>
                     </div>
                     
-                    <div class="version">Reclutamiento 2.0</div>
-                    <div class="period">1990 - 2000</div>
-                    <div class="context">Revolución Digital Temprana</div>
-                    <div class="stage-title">
-                        💻 Digitalización Inicial
-                    </div>
-                    
-                    <div class="characteristics">
-                        <h4>🎯 Características Principales:</h4>
-                        <ul>
-                            <li>Primeras bases de datos digitales (Microsoft Access, dBase)</li>
-                            <li>Automatización básica con software de oficina</li>
-                            <li>Expansión geográfica vía fax y email</li>
-                            <li>Reducción de tiempos: de 8 a 4 semanas promedio</li>
-                            <li>Almacenamiento en disquetes y CD-ROMs</li>
+                    <div class="content-section">
+                        <div class="icon-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <h4>Características Principales</h4>
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="bullet">→</span> Primeras bases de datos digitales (MS Access, dBase)</li>
+                            <li><span class="bullet">→</span> Automatización básica con software de oficina</li>
+                            <li><span class="bullet">→</span> Expansión geográfica vía fax y email</li>
+                            <li><span class="bullet">→</span> Reducción de tiempos: de 8 a 4 semanas promedio</li>
+                            <li><span class="bullet">→</span> Almacenamiento en disquetes y CD-ROMs</li>
                         </ul>
                     </div>
 
-                    <div class="tools">
-                        <h4>🛠️ Herramientas y Medios:</h4>
+                    <div class="content-section">
+                        <div class="icon-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                            </svg>
+                            <h4>Herramientas y Medios</h4>
+                        </div>
                         <div class="tool-tags">
-                            <span class="tool-tag">Email (Lotus Notes)</span>
-                            <span class="tool-tag">Fax masivo</span>
-                            <span class="tool-tag">dBase/Access</span>
-                            <span class="tool-tag">CD-ROMs de CVs</span>
-                            <span class="tool-tag">Resumix (primer ATS)</span>
+                            <span class="tool-tag">📧 Email (Lotus Notes)</span>
+                            <span class="tool-tag">📠 Fax masivo</span>
+                            <span class="tool-tag">💾 dBase/Access</span>
+                            <span class="tool-tag">💿 CD-ROMs de CVs</span>
+                            <span class="tool-tag">🖥️ Resumix (primer ATS)</span>
                         </div>
                     </div>
 
-                    <button class="expand-btn" onclick="toggleDetails(this)">Ver más detalles</button>
+                    <button class="expand-btn" onclick="toggleDetails(this)">
+                        <span>Ver más detalles</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="btn-icon">
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                        </svg>
+                    </button>
+                    
                     <div class="detailed-info">
                         <div class="detailed-content">
-                            <h4>📋 Datos Históricos Verídicos:</h4>
-                            <p><strong>Hito clave:</strong> En 1991, Resumix lanzó el primer sistema ATS comercial, utilizado inicialmente por el Departamento de Defensa de EE.UU. para procesar 100,000+ CVs militares.</p>
-                            <p><strong>Tecnología:</strong> Los CVs se escaneaban y convertían a texto usando OCR (reconocimiento óptico). El 60% tenía errores de conversión, requiriendo revisión manual.</p>
-                            <p><strong>Impacto:</strong> En 1995, el 25% de las grandes empresas (Fortune 500) ya utilizaban algún tipo de sistema digital para gestionar candidatos, comparado con menos del 5% en 1990.</p>
+                            <div class="insight-card">
+                                <h4>🎯 Hito Clave</h4>
+                                <p>En 1991, Resumix lanzó el primer sistema ATS comercial, utilizado inicialmente por el Departamento de Defensa de EE.UU. para procesar <strong>100,000+ CVs</strong> militares.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4>💻 Tecnología</h4>
+                                <p>Los CVs se escaneaban y convertían a texto usando OCR. El <strong>60%</strong> tenía errores de conversión, requiriendo revisión manual.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4>📈 Impacto</h4>
+                                <p>En 1995, el <strong>25%</strong> de las grandes empresas (Fortune 500) ya utilizaban algún tipo de sistema digital para gestionar candidatos, comparado con menos del 5% en 1990.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="evolution-arrow">➡️</div>
+                <div class="evolution-arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                    </svg>
+                </div>
             </div>
 
             <!-- Reclutamiento 3.0 -->
             <div class="timeline-item reclutamiento-3">
-                <div class="timeline-dot">🌐</div>
+                <div class="timeline-dot">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                </div>
                 <div class="timeline-content">
-                    <div class="stage-image">
-                        <svg width="100%" height="120" viewBox="0 0 400 120" style="margin-bottom: 20px;">
-                            <!-- Monitor con internet -->
-                            <rect x="60" y="30" width="80" height="50" fill="#333" stroke="#666" stroke-width="2"/>
-                            <rect x="65" y="35" width="70" height="40" fill="#4a90e2"/>
-                            <text x="100" y="50" text-anchor="middle" font-size="10" fill="#fff">MONSTER</text>
-                            <text x="100" y="62" text-anchor="middle" font-size="8" fill="#fff">.com</text>
-                            <rect x="85" y="80" width="30" height="8" fill="#666"/>
-                            
-                            <!-- Globo terráqueo -->
-                            <circle cx="200" cy="55" r="25" fill="#32cd32" stroke="#228b22" stroke-width="2"/>
-                            <path d="M 180 55 Q 200 35 220 55 Q 200 75 180 55" fill="#228b22"/>
-                            <path d="M 185 45 Q 200 50 215 45" fill="#228b22"/>
-                            <path d="M 185 65 Q 200 60 215 65" fill="#228b22"/>
-                            
-                            <!-- Múltiples CVs -->
-                            <rect x="280" y="25" width="25" height="35" fill="#fff" stroke="#333" stroke-width="1"/>
-                            <rect x="290" y="30" width="25" height="35" fill="#fff" stroke="#333" stroke-width="1"/>
-                            <rect x="300" y="35" width="25" height="35" fill="#fff" stroke="#333" stroke-width="1"/>
-                            <line x1="285" y1="35" x2="300" y2="35" stroke="#333"/>
-                            <line x1="285" y1="40" x2="300" y2="40" stroke="#333"/>
-                            <text x="312" y="85" text-anchor="middle" font-size="8" fill="#333">CVs ONLINE</text>
-                            
-                            <!-- Flecha de conexión -->
-                            <path d="M 145 55 Q 170 45 175 55" fill="none" stroke="#ff6b6b" stroke-width="3" marker-end="url(#arrowhead)"/>
-                            <path d="M 225 55 Q 250 45 255 55" fill="none" stroke="#ff6b6b" stroke-width="3" marker-end="url(#arrowhead)"/>
-                            
-                            <defs>
-                                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-                                    <polygon points="0 0, 10 3.5, 0 7" fill="#ff6b6b"/>
-                                </marker>
-                            </defs>
-                        </svg>
+                    <div class="stage-header">
+                        <div class="stage-image-container">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=400&fit=crop" alt="Internet y tecnología" class="stage-photo" onerror="this.style.display='none'">
+                            <div class="stage-overlay"></div>
+                        </div>
+                        <div class="stage-badge">
+                            <span class="version-tag">v3.0</span>
+                            <h2 class="stage-title">Revolución Online</h2>
+                            <p class="period">2000 - 2010</p>
+                            <p class="context">Era de Internet y Portales de Empleo</p>
+                        </div>
                     </div>
                     
-                    <div class="version">Reclutamiento 3.0</div>
-                    <div class="period">2000 - 2010</div>
-                    <div class="context">Era de Internet y Portales de Empleo</div>
-                    <div class="stage-title">
-                        🌐 Revolución Online
-                    </div>
-                    
-                    <div class="characteristics">
-                        <h4>🎯 Características Principales:</h4>
-                        <ul>
-                            <li>Portales masivos: Monster (1994), CareerBuilder (1995)</li>
-                            <li>Búsqueda por palabras clave y filtros</li>
-                            <li>Aplicación con "un clic" (promedio: 58 aplicaciones/candidato)</li>
-                            <li>Alcance global: 24/7 disponibilidad</li>
-                            <li>Matching automático básico por keywords</li>
+                    <div class="content-section">
+                        <div class="icon-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <h4>Características Principales</h4>
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="bullet">→</span> Portales masivos: Monster (1994), CareerBuilder (1995)</li>
+                            <li><span class="bullet">→</span> Búsqueda por palabras clave y filtros</li>
+                            <li><span class="bullet">→</span> Aplicación con "un clic" (58 aplicaciones/candidato)</li>
+                            <li><span class="bullet">→</span> Alcance global: disponibilidad 24/7</li>
+                            <li><span class="bullet">→</span> Matching automático básico por keywords</li>
                         </ul>
                     </div>
 
-                    <div class="tools">
-                        <h4>🛠️ Herramientas y Medios:</h4>
+                    <div class="content-section">
+                        <div class="icon-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                            </svg>
+                            <h4>Herramientas y Medios</h4>
+                        </div>
                         <div class="tool-tags">
-                            <span class="tool-tag">Monster.com (líder)</span>
-                            <span class="tool-tag">CareerBuilder</span>
-                            <span class="tool-tag">HotJobs (Yahoo)</span>
-                            <span class="tool-tag">Sitios corporativos</span>
-                            <span class="tool-tag">ATS web-based</span>
+                            <span class="tool-tag">🌐 Monster.com (líder)</span>
+                            <span class="tool-tag">💼 CareerBuilder</span>
+                            <span class="tool-tag">📱 HotJobs (Yahoo)</span>
+                            <span class="tool-tag">🏢 Sitios corporativos</span>
+                            <span class="tool-tag">☁️ ATS web-based</span>
                         </div>
                     </div>
 
-                    <button class="expand-btn" onclick="toggleDetails(this)">Ver más detalles</button>
+                    <button class="expand-btn" onclick="toggleDetails(this)">
+                        <span>Ver más detalles</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="btn-icon">
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                        </svg>
+                    </button>
+                    
                     <div class="detailed-info">
                         <div class="detailed-content">
-                            <h4>📋 Datos Históricos Verídicos:</h4>
-                            <p><strong>Explosión digital:</strong> En 2000, Monster.com tenía 34 millones de visitantes únicos mensuales. Para 2005, procesaba 1.5 millones de aplicaciones diarias.</p>
-                            <p><strong>Cambio de paradigma:</strong> El costo por contratación se redujo de $3,000 (métodos tradicionales) a $500 promedio usando portales online. El tiempo de llenado de vacantes bajó de 4 semanas a 2 semanas.</p>
-                            <p><strong>Problema emergente:</strong> Surgió el "Black Hole Effect" - 75% de aplicaciones nunca recibían respuesta, creando frustración masiva en candidatos.</p>
+                            <div class="insight-card">
+                                <h4>💥 Explosión Digital</h4>
+                                <p>En 2000, Monster.com tenía <strong>34 millones</strong> de visitantes únicos mensuales. Para 2005, procesaba <strong>1.5 millones</strong> de aplicaciones diarias.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4>💰 Cambio de Paradigma</h4>
+                                <p>El costo por contratación se redujo de <strong>$3,000</strong> (métodos tradicionales) a <strong>$500</strong> usando portales online. El tiempo bajó de 4 a 2 semanas.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4>⚠️ Problema Emergente</h4>
+                                <p>Surgió el "Black Hole Effect" - <strong>75%</strong> de aplicaciones nunca recibían respuesta, creando frustración masiva en candidatos.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="evolution-arrow">➡️</div>
+                <div class="evolution-arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                    </svg>
+                </div>
             </div>
 
             <!-- Reclutamiento 4.0 -->
             <div class="timeline-item reclutamiento-4">
-                <div class="timeline-dot">📱</div>
+                <div class="timeline-dot">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17 1.01L7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/>
+                    </svg>
+                </div>
                 <div class="timeline-content">
-                    <div class="stage-image">
-                        <svg width="100%" height="120" viewBox="0 0 400 120" style="margin-bottom: 20px;">
-                            <!-- Smartphone -->
-                            <rect x="70" y="25" width="40" height="70" rx="8" fill="#333" stroke="#666" stroke-width="2"/>
-                            <rect x="75" y="35" width="30" height="50" fill="#4a90e2"/>
-                            <circle cx="90" cy="30" r="2" fill="#666"/>
-                            <text x="90" y="55" text-anchor="middle" font-size="8" fill="#fff">LinkedIn</text>
-                            <text x="90" y="65" text-anchor="middle" font-size="6" fill="#fff">Jobs</text>
-                            
-                            <!-- Redes sociales -->
-                            <circle cx="160" cy="40" r="18" fill="#1877f2"/>
-                            <text x="160" y="45" text-anchor="middle" font-size="12" fill="#fff" font-weight="bold">f</text>
-                            <text x="160" y="65" text-anchor="middle" font-size="8" fill="#333">Facebook</text>
-                            
-                            <circle cx="220" cy="40" r="18" fill="#1da1f2"/>
-                            <path d="M 210 40 Q 220 35 230 40 Q 220 45 210 40" fill="#fff"/>
-                            <text x="220" y="65" text-anchor="middle" font-size="8" fill="#333">Twitter</text>
-                            
-                            <!-- Video call -->
-                            <rect x="280" y="25" width="50" height="35" fill="#32cd32" stroke="#228b22" stroke-width="2"/>
-                            <circle cx="295" cy="35" r="5" fill="#fff"/>
-                            <circle cx="315" cy="35" r="5" fill="#fff"/>
-                            <rect x="290" y="45" width="20" height="3" fill="#fff"/>
-                            <text x="305" y="75" text-anchor="middle" font-size="8" fill="#333">VIDEO</text>
-                            
-                            <!-- Conexiones -->
-                            <line x1="110" y1="60" x2="140" y2="50" stroke="#ff6b6b" stroke-width="2"/>
-                            <line x1="180" y1="50" x2="200" y2="50" stroke="#ff6b6b" stroke-width="2"/>
-                            <line x1="240" y1="50" x2="270" y2="45" stroke="#ff6b6b" stroke-width="2"/>
-                            
-                            <!-- Analytics -->
-                            <rect x="340" y="35" width="30" height="20" fill="#ffd700" stroke="#ffb347" stroke-width="2"/>
-                            <rect x="345" y="45" width="4" height="8" fill="#ff6b6b"/>
-                            <rect x="352" y="40" width="4" height="13" fill="#32cd32"/>
-                            <rect x="359" y="42" width="4" height="11" fill="#4a90e2"/>
-                            <text x="355" y="70" text-anchor="middle" font-size="8" fill="#333">METRICS</text>
-                        </svg>
+                    <div class="stage-header">
+                        <div class="stage-image-container">
+                            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=400&fit=crop" alt="Redes sociales y móviles" class="stage-photo" onerror="this.style.display='none'">
+                            <div class="stage-overlay"></div>
+                        </div>
+                        <div class="stage-badge">
+                            <span class="version-tag">v4.0</span>
+                            <h2 class="stage-title">Reclutamiento Social</h2>
+                            <p class="period">2010 - 2020</p>
+                            <p class="context">Era de Redes Sociales y Movilidad</p>
+                        </div>
                     </div>
                     
-                    <div class="version">Reclutamiento 4.0</div>
-                    <div class="period">2010 - 2020</div>
-                    <div class="context">Era de Redes Sociales y Movilidad</div>
-                    <div class="stage-title">
-                        📱 Reclutamiento Social
-                    </div>
-                    
-                    <div class="characteristics">
-                        <h4>🎯 Características Principales:</h4>
-                        <ul>
-                            <li>LinkedIn: 740 millones de usuarios (2021), 90% de reclutadores lo usan</li>
-                            <li>Employer branding: 75% candidatos investigan empresa antes de aplicar</li>
-                            <li>Experiencia móvil: 89% busca empleo desde smartphone</li>
-                            <li>Video entrevistas: crecimiento 500% (2015-2020)</li>
-                            <li>Analytics: métricas de tiempo, costo y calidad de contratación</li>
+                    <div class="content-section">
+                        <div class="icon-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <h4>Características Principales</h4>
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="bullet">→</span> LinkedIn: 740M usuarios (2021), 90% reclutadores lo usan</li>
+                            <li><span class="bullet">→</span> Employer branding: 75% investigan empresa antes de aplicar</li>
+                            <li><span class="bullet">→</span> Experiencia móvil: 89% busca empleo desde smartphone</li>
+                            <li><span class="bullet">→</span> Video entrevistas: crecimiento 500% (2015-2020)</li>
+                            <li><span class="bullet">→</span> Analytics: métricas de tiempo, costo y calidad</li>
                         </ul>
                     </div>
 
-                    <div class="tools">
-                        <h4>🛠️ Herramientas y Medios:</h4>
+                    <div class="content-section">
+                        <div class="icon-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                            </svg>
+                            <h4>Herramientas y Medios</h4>
+                        </div>
                         <div class="tool-tags">
-                            <span class="tool-tag">LinkedIn Recruiter</span>
-                            <span class="tool-tag">Facebook Jobs (2017)</span>
-                            <span class="tool-tag">Twitter sourcing</span>
-                            <span class="tool-tag">Apps: Indeed, Glassdoor</span>
-                            <span class="tool-tag">Zoom, Skype interviews</span>
-                            <span class="tool-tag">Workday, Greenhouse</span>
+                            <span class="tool-tag">💼 LinkedIn Recruiter</span>
+                            <span class="tool-tag">📘 Facebook Jobs (2017)</span>
+                            <span class="tool-tag">🐦 Twitter sourcing</span>
+                            <span class="tool-tag">📲 Apps: Indeed, Glassdoor</span>
+                            <span class="tool-tag">🎥 Zoom, Skype interviews</span>
+                            <span class="tool-tag">⚙️ Workday, Greenhouse</span>
                         </div>
                     </div>
 
-                    <button class="expand-btn" onclick="toggleDetails(this)">Ver más detalles</button>
+                    <button class="expand-btn" onclick="toggleDetails(this)">
+                        <span>Ver más detalles</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="btn-icon">
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                        </svg>
+                    </button>
+                    
                     <div class="detailed-info">
                         <div class="detailed-content">
-                            <h4>📋 Datos Históricos Verídicos:</h4>
-                            <p><strong>LinkedIn dominance:</strong> Lanzado en 2003, para 2016 LinkedIn tenía 467 millones de usuarios. Microsoft lo adquirió por $26.2 mil millones, reconociendo su valor en reclutamiento.</p>
-                            <p><strong>Mobile revolution:</strong> En 2015, el 58% de búsquedas de empleo se realizaban desde móviles. Para 2019, esta cifra alcanzó el 89%, forzando a todas las plataformas a optimizar para móvil.</p>
-                            <p><strong>Employer branding:</strong> Glassdoor (fundado 2007) cambió el juego: 84% de candidatos leen reseñas de empleados antes de aplicar. Las empresas invirtieron $2.4 mil millones anuales en employer branding para 2020.</p>
+                            <div class="insight-card">
+                                <h4>👥 LinkedIn Dominance</h4>
+                                <p>Lanzado en 2003, para 2016 LinkedIn tenía <strong>467 millones</strong> de usuarios. Microsoft lo adquirió por <strong>$26.2 mil millones</strong>, reconociendo su valor en reclutamiento.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4>📱 Mobile Revolution</h4>
+                                <p>En 2015, el <strong>58%</strong> de búsquedas de empleo se realizaban desde móviles. Para 2019, esta cifra alcanzó el <strong>89%</strong>, forzando optimización móvil universal.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4>⭐ Employer Branding</h4>
+                                <p>Glassdoor (fundado 2007) cambió el juego: <strong>84%</strong> de candidatos leen reseñas antes de aplicar. Inversión: <strong>$2.4 mil millones</strong> anuales para 2020.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="evolution-arrow">➡️</div>
+                <div class="evolution-arrow">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
+                    </svg>
+                </div>
             </div>
 
             <!-- Reclutamiento 5.0 -->
             <div class="timeline-item reclutamiento-5">
-                <div class="timeline-dot">🤖</div>
+                <div class="timeline-dot">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20 9V7c0-1.1-.9-2-2-2h-3c0-1.66-1.34-3-3-3S9 3.34 9 5H6c-1.1 0-2 .9-2 2v2c-1.66 0-3 1.34-3 3s1.34 3 3 3v4c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-4c1.66 0 3-1.34 3-3s-1.34-3-3-3zm-2 10H6V7h12v12zm-9-6c-.83 0-1.5-.67-1.5-1.5S8.17 10 9 10s1.5.67 1.5 1.5S9.83 13 9 13zm7.5-1.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5zM8 15h8v2H8v-2z"/>
+                    </svg>
+                </div>
                 <div class="timeline-content">
-                    <div class="stage-image">
-                        <svg width="100%" height="120" viewBox="0 0 400 120" style="margin-bottom: 20px;">
-                            <!-- Robot/IA -->
-                            <rect x="60" y="30" width="40" height="50" rx="10" fill="#4a90e2" stroke="#2c5aa0" stroke-width="2"/>
-                            <circle cx="70" cy="45" r="4" fill="#00ff00"/>
-                            <circle cx="90" cy="45" r="4" fill="#00ff00"/>
-                            <rect x="65" y="55" width="20" height="3" fill="#fff"/>
-                            <rect x="65" y="65" width="20" height="8" fill="#333"/>
-                            <text x="80" y="95" text-anchor="middle" font-size="8" fill="#333">AI BOT</text>
-                            
-                            <!-- Algoritmos/Cerebro -->
-                            <circle cx="160" cy="55" r="25" fill="#ff6b6b" stroke="#e74c3c" stroke-width="2"/>
-                            <path d="M 145 45 Q 160 35 175 45" fill="none" stroke="#fff" stroke-width="2"/>
-                            <path d="M 145 55 Q 160 45 175 55" fill="none" stroke="#fff" stroke-width="2"/>
-                            <path d="M 145 65 Q 160 55 175 65" fill="none" stroke="#fff" stroke-width="2"/>
-                            <circle cx="155" cy="50" r="2" fill="#fff"/>
-                            <circle cx="165" cy="60" r="2" fill="#fff"/>
-                            <text x="160" y="90" text-anchor="middle" font-size="8" fill="#333">ML</text>
-                            
-                            <!-- VR/AR -->
-                            <rect x="220" y="35" width="50" height="25" rx="12" fill="#9b59b6" stroke="#8e44ad" stroke-width="2"/>
-                            <rect x="225" y="40" width="18" height="15" fill="#333"/>
-                            <rect x="247" y="40" width="18" height="15" fill="#333"/>
-                            <line x1="243" y1="47" x2="247" y2="47" stroke="#fff" stroke-width="2"/>
-                            <text x="245" y="75" text-anchor="middle" font-size="8" fill="#333">VR/AR</text>
-                            
-                            <!-- Blockchain -->
-                            <rect x="300" y="40" width="15" height="15" fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
-                            <rect x="320" y="35" width="15" height="15" fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
-                            <rect x="310" y="55" width="15" height="15" fill="#f39c12" stroke="#e67e22" stroke-width="1"/>
-                            <line x1="315" y1="40" x2="320" y2="35" stroke="#333" stroke-width="2"/>
-                            <line x1="325" y1="50" x2="320" y2="55" stroke="#333" stroke-width="2"/>
-                            <text x="317" y="85" text-anchor="middle" font-size="8" fill="#333">BLOCKCHAIN</text>
-                            
-                            <!-- Conexiones IA -->
-                            <path d="M 100 55 Q 125 45 135 55" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
-                            <path d="M 185 55 Q 200 50 220 50" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
-                            <path d="M 270 50 Q 285 45 300 47" fill="none" stroke="#00ff00" stroke-width="3" stroke-dasharray="5,5"/>
-                            
-                            <!-- Datos flotantes -->
-                            <circle cx="120" cy="25" r="3" fill="#2ecc71"/>
-                            <circle cx="200" cy="20" r="3" fill="#2ecc71"/>
-                            <circle cx="280" cy="25" r="3" fill="#2ecc71"/>
-                            <circle cx="350" cy="20" r="3" fill="#2ecc71"/>
-                        </svg>
+                    <div class="stage-header">
+                        <div class="stage-image-container">
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop" alt="Inteligencia Artificial" class="stage-photo" onerror="this.style.display='none'">
+                            <div class="stage-overlay"></div>
+                        </div>
+                        <div class="stage-badge">
+                            <span class="version-tag">v5.0</span>
+                            <h2 class="stage-title">Inteligencia Artificial</h2>
+                            <p class="period">2020 - Presente</p>
+                            <p class="context">Era de IA y Automatización Inteligente</p>
+                        </div>
                     </div>
                     
-                    <div class="version">Reclutamiento 5.0</div>
-                    <div class="period">2020 - Presente</div>
-                    <div class="context">Era de IA y Automatización Inteligente</div>
-                    <div class="stage-title">
-                        🤖 Inteligencia Artificial
-                    </div>
-                    
-                    <div class="characteristics">
-                        <h4>🎯 Características Principales:</h4>
-                        <ul>
-                            <li>IA procesa 75% de CVs automáticamente (2023)</li>
-                            <li>Chatbots manejan 67% de consultas iniciales</li>
-                            <li>Análisis predictivo: 85% precisión en éxito laboral</li>
-                            <li>Personalización: mensajes únicos para cada candidato</li>
-                            <li>Trabajo remoto: 42% posiciones son remotas/híbridas</li>
+                    <div class="content-section">
+                        <div class="icon-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                            <h4>Características Principales</h4>
+                        </div>
+                        <ul class="feature-list">
+                            <li><span class="bullet">→</span> IA procesa 75% de CVs automáticamente (2023)</li>
+                            <li><span class="bullet">→</span> Chatbots manejan 67% de consultas iniciales</li>
+                            <li><span class="bullet">→</span> Análisis predictivo: 85% precisión en éxito laboral</li>
+                            <li><span class="bullet">→</span> Personalización: mensajes únicos por candidato</li>
+                            <li><span class="bullet">→</span> Trabajo remoto: 42% posiciones remotas/híbridas</li>
                         </ul>
                     </div>
 
-                    <div class="tools">
-                        <h4>🛠️ Herramientas y Medios:</h4>
+                    <div class="content-section">
+                        <div class="icon-header">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z"/>
+                            </svg>
+                            <h4>Herramientas y Medios</h4>
+                        </div>
                         <div class="tool-tags">
-                            <span class="tool-tag">ChatGPT/Claude IA</span>
-                            <span class="tool-tag">HireVue (video IA)</span>
-                            <span class="tool-tag">Pymetrics (neurociencia)</span>
-                            <span class="tool-tag">VR interviews</span>
-                            <span class="tool-tag">Blockchain credentials</span>
-                            <span class="tool-tag">Predictive analytics</span>
+                            <span class="tool-tag">🤖 ChatGPT/Claude IA</span>
+                            <span class="tool-tag">🎥 HireVue (video IA)</span>
+                            <span class="tool-tag">🧠 Pymetrics (neurociencia)</span>
+                            <span class="tool-tag">🥽 VR interviews</span>
+                            <span class="tool-tag">🔗 Blockchain credentials</span>
+                            <span class="tool-tag">📊 Predictive analytics</span>
                         </div>
                     </div>
 
-                    <button class="expand-btn" onclick="toggleDetails(this)">Ver más detalles</button>
+                    <button class="expand-btn" onclick="toggleDetails(this)">
+                        <span>Ver más detalles</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" class="btn-icon">
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                        </svg>
+                    </button>
+                    
                     <div class="detailed-info">
                         <div class="detailed-content">
-                            <h4>📋 Datos Históricos Verídicos:</h4>
-                            <p><strong>Aceleración COVID-19:</strong> La pandemia aumentó el uso de IA en reclutamiento 300%. Las video-entrevistas pasaron de 8% (2019) a 82% (2021) de todos los procesos.</p>
-                            <p><strong>IA actual:</strong> HireVue analiza 25,000 puntos de datos por video-entrevista. Unilever redujo tiempo de contratación de 4 meses a 4 semanas usando IA, procesando 1.8 millones de aplicaciones anuales.</p>
-                            <p><strong>Futuro inmediato:</strong> Para 2025, se proyecta que 95% de decisiones de reclutamiento tendrán algún componente de IA. El mercado global de IA en reclutamiento alcanzará $890 millones en 2028.</p>
+                            <div class="insight-card">
+                                <h4>🦠 Aceleración COVID-19</h4>
+                                <p>La pandemia aumentó el uso de IA en reclutamiento <strong>300%</strong>. Las video-entrevistas pasaron de <strong>8%</strong> (2019) a <strong>82%</strong> (2021) de todos los procesos.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4>🔬 IA Actual</h4>
+                                <p>HireVue analiza <strong>25,000 puntos</strong> de datos por video-entrevista. Unilever redujo tiempo de contratación de <strong>4 meses a 4 semanas</strong> usando IA, procesando 1.8M aplicaciones anuales.</p>
+                            </div>
+                            <div class="insight-card">
+                                <h4>🚀 Futuro Inmediato</h4>
+                                <p>Para 2025, se proyecta que <strong>95%</strong> de decisiones de reclutamiento tendrán algún componente de IA. Mercado global: <strong>$890 millones</strong> en 2028.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -425,26 +453,37 @@
         </div>
 
         <div class="summary-section">
-            <h2>🎯 El Futuro del Reclutamiento</h2>
-            <p>
-                Hemos evolucionado desde anuncios en periódicos hasta algoritmos de inteligencia artificial que pueden predecir el éxito laboral. 
-                Cada etapa ha traído mayor eficiencia, alcance global y personalización. El futuro promete aún más innovación con 
-                tecnologías emergentes como realidad virtual, blockchain y análisis de emociones en tiempo real.
-            </p>
+            <div class="summary-content">
+                <div class="summary-icon">🎯</div>
+                <h2>El Futuro del Reclutamiento</h2>
+                <p class="summary-text">
+                    Hemos evolucionado desde anuncios en periódicos hasta algoritmos de inteligencia artificial que pueden predecir el éxito laboral con precisión asombrosa. 
+                    Cada etapa ha traído <strong>mayor eficiencia</strong>, <strong>alcance global</strong> y <strong>personalización sin precedentes</strong>.
+                </p>
+                
+                </div>
+            </div>
         </div>
+
+        <footer class="footer">
+            <p>© 2025 Evolución del Reclutamiento | Análisis Histórico y Proyecciones</p>
+        </footer>
     </div>
 
     <script>
         function toggleDetails(button) {
             const detailedInfo = button.nextElementSibling;
             const isExpanded = detailedInfo.classList.contains('expanded');
+            const btnIcon = button.querySelector('.btn-icon');
             
             if (isExpanded) {
                 detailedInfo.classList.remove('expanded');
-                button.textContent = 'Ver más detalles';
+                button.querySelector('span').textContent = 'Ver más detalles';
+                btnIcon.style.transform = 'rotate(0deg)';
             } else {
                 detailedInfo.classList.add('expanded');
-                button.textContent = 'Ocultar detalles';
+                button.querySelector('span').textContent = 'Ocultar detalles';
+                btnIcon.style.transform = 'rotate(180deg)';
             }
         }
 
@@ -459,8 +498,8 @@
                     }
                 });
             }, {
-                threshold: 0.2,
-                rootMargin: '0px 0px -100px 0px'
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
             });
 
             items.forEach(item => {
@@ -475,14 +514,31 @@
             
             contents.forEach(content => {
                 content.addEventListener('mouseenter', function() {
-                    this.style.transform = 'translateY(-8px) scale(1.02)';
+                    this.style.transform = 'translateY(-5px)';
                 });
                 
                 content.addEventListener('mouseleave', function() {
-                    this.style.transform = 'translateY(0) scale(1)';
+                    this.style.transform = 'translateY(0)';
                 });
             });
+
+            // Animación de las estadísticas del header
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                stat.style.opacity = '0';
+                stat.style.transform = 'translateY(20px)';
+            });
+
+            setTimeout(() => {
+                stats.forEach((stat, index) => {
+                    setTimeout(() => {
+                        stat.style.transition = 'all 0.6s ease';
+                        stat.style.opacity = '1';
+                        stat.style.transform = 'translateY(0)';
+                    }, index * 200);
+                });
+            }, 500);
         });
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'993bc85ec14ca634',t:'MTc2MTMzMzExNC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
